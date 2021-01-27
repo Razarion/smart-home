@@ -1,21 +1,3 @@
-<p-table [value]="bulbs">
-  <ng-template pTemplate="header">
-    <tr>
-      <th>Name</th>
-      <th>Id</th>
-      <th>IP</th>
-      <th>Port</th>
-    </tr>
-  </ng-template>
-  <ng-template pTemplate="body" let-bulb>
-    <tr>
-      <td>{{bulb.name}}</td>
-      <td>{{bulb.id}}</td>
-      <td>{{bulb.ip}}</td>
-      <td>{{bulb.port}}</td>
-    </tr>
-  </ng-template>
-</p-table>
-
-
 <router-outlet></router-outlet>
+
+<bulb-config></bulb-config>
