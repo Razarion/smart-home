@@ -10,7 +10,8 @@ export class BulbConfig {
   bulbs: Bulb[] = [];
 
   constructor(private http: HttpClient) {
-    this.http.get("http://localhost:8080/bulb/all").subscribe(value => this.bulbs = <Bulb[]>value);
+    // this.http.get("http://localhost:8080/api/bulb/all").subscribe(value => this.bulbs = <Bulb[]>value);
+    this.http.get("/api/bulb/all").subscribe(value => this.bulbs = <Bulb[]>value);
   }
 
 }
