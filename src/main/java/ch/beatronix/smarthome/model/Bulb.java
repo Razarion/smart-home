@@ -1,5 +1,7 @@
 package ch.beatronix.smarthome.model;
 
+import java.util.Objects;
+
 public class Bulb {
     private String name;
     private String id;
@@ -56,5 +58,32 @@ public class Bulb {
     public Bulb port(int port) {
         setPort(port);
         return this;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+        Bulb bulb = (Bulb) o;
+        return id.equals(bulb.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
+    }
+
+    @Override
+    public String toString() {
+        return "Bulb{" +
+                "name='" + name + '\'' +
+                ", id='" + id + '\'' +
+                ", ip='" + ip + '\'' +
+                ", port=" + port +
+                '}';
     }
 }
