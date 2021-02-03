@@ -27,7 +27,8 @@ public class Ssdp {
     @PostConstruct
     public void discover() {
         try {
-            DatagramSocket socket = new DatagramSocket(43210, InetAddress.getLocalHost());
+            // DatagramSocket socket = new DatagramSocket(43210, InetAddress.getLocalHost()); // PC
+            DatagramSocket socket = new DatagramSocket(43210, InetAddress.getByName("0.0.0.0")); // RaspberryPi
 
             Thread thread = new Thread(() -> {
                 try {
@@ -36,6 +37,7 @@ public class Ssdp {
                         DatagramPacket packet = new DatagramPacket(buf, buf.length);
                         socket.receive(packet);
                         Bulb bulb = BulbFactory.create(new String(packet.getData()));
+                        System.out.println("Received: " + bulb);
                         bulbService.onBulbDiscovered(bulb);
                     }
                 } catch (Exception e) {
@@ -48,6 +50,7 @@ public class Ssdp {
             DatagramPacket p = new DatagramPacket(pack, pack.length);
             p.setAddress(InetAddress.getByName("239.255.255.250"));
             p.setPort(SSDP_SEARCH_PORT);
+            System.out.println("---- start ssdp scan ----");
             socket.send(p);
 
             Thread.sleep(5000);
