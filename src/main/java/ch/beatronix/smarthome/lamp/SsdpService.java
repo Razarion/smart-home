@@ -12,20 +12,14 @@ import java.net.InetAddress;
 import java.nio.charset.StandardCharsets;
 
 @Component
-public class Ssdp {
+public class SsdpService {
     public static final String DISCOVER_MESSAGE_ROOT_DEVICE = "M-SEARCH * HTTP/1.1\r\nHOST: 239.255.255.250:1982\r\nMAN: \"ssdp:discover\"\r\nST: wifi_bulb\r\n";
     public static final int SSDP_SEARCH_PORT = 1982;
     @Inject
     private BulbService bulbService;
 
-    public static void main(String[] args) {
-        Ssdp ssdp = new Ssdp();
-        ssdp.bulbService = new BulbService();
-        ssdp.discover();
-    }
-
     @PostConstruct
-    public void discover() {
+    public void runSsdp() {
         try {
             // DatagramSocket socket = new DatagramSocket(43210, InetAddress.getLocalHost()); // PC
             DatagramSocket socket = new DatagramSocket(43210, InetAddress.getByName("0.0.0.0")); // RaspberryPi
