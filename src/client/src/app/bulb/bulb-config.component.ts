@@ -6,7 +6,7 @@ import {HttpClient} from "@angular/common/http";
   selector: 'bulb-config',
   templateUrl: './bulb-config.component.html'
 })
-export class BulbConfig {
+export class BulbConfigComponent {
   bulbs: Bulb[] = [];
 
   constructor(private http: HttpClient) {
