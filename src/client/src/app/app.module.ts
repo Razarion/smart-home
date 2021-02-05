@@ -10,6 +10,8 @@ import {BulbStateComponent} from "./bulb/bulb-state-component";
 import {SelectButtonModule} from "primeng/selectbutton";
 import {FormsModule} from "@angular/forms";
 import {ButtonModule} from "primeng/button";
+import {CheckboxModule} from "primeng/checkbox";
+import {SliderModule} from 'primeng/slider';
 
 @NgModule({
   declarations: [
@@ -23,8 +25,10 @@ import {ButtonModule} from "primeng/button";
     TableModule,
     HttpClientModule,
     SelectButtonModule,
+    CheckboxModule,
     FormsModule,
-    ButtonModule
+    ButtonModule,
+    SliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

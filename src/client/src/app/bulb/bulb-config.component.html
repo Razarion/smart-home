@@ -1,6 +1,7 @@
 <p-table [value]="bulbs">
   <ng-template pTemplate="header">
     <tr>
+      <th>Control</th>
       <th>Name</th>
       <th>Id</th>
       <th>IP</th>
@@ -9,6 +10,7 @@
   </ng-template>
   <ng-template pTemplate="body" let-bulb>
     <tr>
+      <td><p-checkbox value="{{bulb.id}}" name="control-checkbox" [(ngModel)]="selectedControlCheckbox"></p-checkbox></td>
       <td>{{bulb.name}}</td>
       <td>{{bulb.id}}</td>
       <td>{{bulb.ip}}</td>
@@ -17,6 +19,6 @@
   </ng-template>
 </p-table>
 
-<p-button label="Click" (click)="runSsdp($event)">Run SSDP</p-button>
+<p-button label="Click" (click)="runSsdp()">Run SSDP</p-button>
 
-<bulb-state></bulb-state>
+<bulb-state (onChange)="onBulbStateChange($event)"></bulb-state>

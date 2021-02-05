@@ -2,9 +2,11 @@ package ch.beatronix.smarthome.rest;
 
 import ch.beatronix.smarthome.lamp.SsdpService;
 import ch.beatronix.smarthome.model.Bulb;
+import ch.beatronix.smarthome.model.BulbStateList;
 import ch.beatronix.smarthome.service.BulbService;
 
 import javax.inject.Inject;
+import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
@@ -31,5 +33,12 @@ public class BulbController {
     public List<Bulb> runSsdp() {
         ssdpService.runSsdp();
         return bulbService.getBulbs();
+    }
+
+    @POST
+    @Path("/bulb-states")
+    @Consumes("application/json")
+    public void bulbStates(BulbStateList bulbStateList) {
+        bulbService.bulbStates(bulbStateList.getBulbState(), bulbStateList.getBulbIds());
     }
 }
