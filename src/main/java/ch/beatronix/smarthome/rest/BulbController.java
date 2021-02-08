@@ -12,6 +12,7 @@ import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import java.util.List;
+import java.util.Map;
 
 @Path("/bulb")
 public class BulbController {
@@ -40,5 +41,14 @@ public class BulbController {
     @Consumes("application/json")
     public void bulbStates(BulbStateList bulbStateList) {
         bulbService.bulbStates(bulbStateList.getBulbState(), bulbStateList.getBulbIds());
+    }
+
+    @POST
+    @Path("/save-bulb-names")
+    @Consumes("application/json")
+    @Produces("application/json")
+    public List<Bulb> saveBulbNames(Map<String, String> bulbNames) {
+        bulbService.saveBulbNames(bulbNames);
+        return bulbService.getBulbs();
     }
 }

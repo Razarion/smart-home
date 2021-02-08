@@ -12,6 +12,7 @@ import {FormsModule} from "@angular/forms";
 import {ButtonModule} from "primeng/button";
 import {CheckboxModule} from "primeng/checkbox";
 import {SliderModule} from 'primeng/slider';
+import {InputTextModule} from 'primeng/inputtext';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import {SliderModule} from 'primeng/slider';
     CheckboxModule,
     FormsModule,
     ButtonModule,
-    SliderModule
+    SliderModule,
+    InputTextModule
   ],
   providers: [],
   bootstrap: [AppComponent]

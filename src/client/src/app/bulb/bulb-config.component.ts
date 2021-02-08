@@ -26,4 +26,11 @@ export class BulbConfigComponent {
     };
     this.http.post("/api/bulb/bulb-states", bulbStateList).subscribe();
   }
+
+  saveBulbs() {
+    let bulbNames: any = {};
+    this.bulbs.forEach(bulb => bulbNames[bulb.id] = bulb.name);
+
+    this.http.post("/api/bulb/save-bulb-names", bulbNames).subscribe(value => this.bulbs = <Bulb[]>value);
+  }
 }

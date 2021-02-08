@@ -11,14 +11,15 @@
   <ng-template pTemplate="body" let-bulb>
     <tr>
       <td><p-checkbox value="{{bulb.id}}" name="control-checkbox" [(ngModel)]="selectedControlCheckbox"></p-checkbox></td>
-      <td>{{bulb.name}}</td>
+      <td><input type="text" pInputText [(ngModel)]="bulb.name"/></td>
       <td>{{bulb.id}}</td>
       <td>{{bulb.ip}}</td>
       <td>{{bulb.port}}</td>
     </tr>
   </ng-template>
 </p-table>
+<p-button label="Save Bulbs" (click)="saveBulbs()"></p-button>
 
-<p-button label="Click" (click)="runSsdp()">Run SSDP</p-button>
+<p-button label="Run SSDP" (click)="runSsdp()"></p-button>
 
 <bulb-state (onChange)="onBulbStateChange($event)"></bulb-state>
