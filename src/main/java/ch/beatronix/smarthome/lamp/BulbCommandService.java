@@ -11,9 +11,12 @@ import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.Socket;
 import java.nio.charset.StandardCharsets;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 @Component
 public class BulbCommandService {
+    private final ExecutorService executor = Executors.newFixedThreadPool(20);
 
     public static void main(String[] args) {
         BulbCommandService bulbCommandService = new BulbCommandService();
@@ -23,6 +26,10 @@ public class BulbCommandService {
     }
 
     public void sendBulbService(Bulb bulb, BulbState bulbState) {
+        executor.submit(() -> execute(bulb, bulbState));
+    }
+
+    public void execute(Bulb bulb, BulbState bulbState) {
         try {
             String command = null;
             if (bulbState.getPower() != null) {
