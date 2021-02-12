@@ -1,0 +1,8 @@
+<div *ngIf="bulbState">
+  <div *ngIf="bulbState.power">
+    Power: {{bulbState.power}}
+  </div>
+  <div *ngIf="bulbState.hsv">
+    Hue:{{bulbState.hsv.hue}} Sat:{{bulbState.hsv.saturation}} Bright:{{bulbState.hsv.brightness}}
+  </div>
+</div>

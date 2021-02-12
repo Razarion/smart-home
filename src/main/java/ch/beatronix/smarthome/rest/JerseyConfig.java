@@ -11,6 +11,7 @@ public class JerseyConfig extends ResourceConfig {
 
     public JerseyConfig() {
         register(BulbController.class);
+        register(SceneController.class);
         register(CorsFilter.class);
     }
 }

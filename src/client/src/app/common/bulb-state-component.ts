@@ -12,17 +12,16 @@ export class BulbStateComponent {
   hue: number = 0;
   saturation: number = 0;
   brightness: number = 0;
+  bulbState: BulbState = new BulbState();
 
   changePower(power: boolean) {
-    let bulbState: BulbState = new BulbState();
-    bulbState.power = power;
-    this.onChange.emit(bulbState)
+    this.bulbState.power = power;
+    this.onChange.emit(this.bulbState)
   }
 
   changeHsv() {
-    let bulbState: BulbState = new BulbState();
-    bulbState.hsv = new Hsv(this.hue, this.saturation, this.brightness);
-    this.onChange.emit(bulbState)
+    this.bulbState.hsv = new Hsv(this.hue, this.saturation, this.brightness);
+    this.onChange.emit(this.bulbState)
   }
 
 }
