@@ -1,6 +1,7 @@
 package ch.beatronix.smarthome.rest;
 
 import ch.beatronix.smarthome.model.Scene;
+import ch.beatronix.smarthome.model.SimpleScene;
 import ch.beatronix.smarthome.service.SceneService;
 
 import javax.inject.Inject;
@@ -51,6 +52,20 @@ public class SceneController {
     @Path("/show")
     public void show(Scene scene) {
         sceneService.show(scene);
+    }
+
+    @GET
+    @Path("/all-simple-scenes")
+    @Produces("application/json")
+    public List<SimpleScene> getSimpleScenes() {
+        return sceneService.getSimpleScenes();
+    }
+
+    @PUT
+    @Path("/activate-scene")
+    @Produces("application/json")
+    public void activateScene(int sceneId) {
+        sceneService.show(sceneService.getScene(sceneId));
     }
 
 }

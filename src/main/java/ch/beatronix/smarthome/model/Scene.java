@@ -63,4 +63,8 @@ public class Scene {
     public int hashCode() {
         return Objects.hash(id);
     }
+
+    public SimpleScene toSimpleScene() {
+        return new SimpleScene().id(id).name(name);
+    }
 }

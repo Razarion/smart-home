@@ -1,1 +1,3 @@
-Control
+<div *ngFor='let scene of simpleScenes'>
+  <p-button label="{{scene.name}}" (onClick)="activateScene(scene.id)"></p-button>
+</div>

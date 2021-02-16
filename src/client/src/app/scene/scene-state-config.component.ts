@@ -1,5 +1,5 @@
 import {Bulb} from "../dto/bulb";
-import {Component, Input} from "@angular/core";
+import {Component, Input, OnChanges, SimpleChanges} from "@angular/core";
 import {HttpClient} from "@angular/common/http";
 import {BulbState} from "../dto/bulb-state";
 import {Scene} from "../dto/scene";
@@ -8,7 +8,7 @@ import {Scene} from "../dto/scene";
   selector: 'scene-state-config',
   templateUrl: './scene-state-config.component.html'
 })
-export class SceneStateConfigComponent {
+export class SceneStateConfigComponent implements OnChanges {
   bulbs: Bulb[] = [];
   selectedBulbIds: string[] = [];
   @Input() scene?: Scene;
@@ -19,7 +19,7 @@ export class SceneStateConfigComponent {
 
   addToScene(bulb: Bulb) {
     if (this.scene !== undefined) {
-      if (this.scene.bulbStates == null) {
+      if (this.scene.bulbStates == undefined) {
         this.scene.bulbStates = {};
       }
       this.scene.bulbStates[bulb.id] = new BulbState()
@@ -52,5 +52,9 @@ export class SceneStateConfigComponent {
       this.scene.bulbStates[bulbId] = bulbState;
     });
     this.http.put("/api/scene/show", this.scene).subscribe();
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    this.selectedBulbIds = [];
   }
 }

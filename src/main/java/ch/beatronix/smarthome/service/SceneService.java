@@ -1,13 +1,16 @@
 package ch.beatronix.smarthome.service;
 
 import ch.beatronix.smarthome.lamp.BulbCommandService;
+import ch.beatronix.smarthome.model.Bulb;
 import ch.beatronix.smarthome.model.PersistContainer;
 import ch.beatronix.smarthome.model.Scene;
+import ch.beatronix.smarthome.model.SimpleScene;
 import org.springframework.stereotype.Component;
 
 import javax.inject.Inject;
 import java.util.Collections;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Component
 public class SceneService {
@@ -24,6 +27,14 @@ public class SceneService {
             return scenes;
         }
         return Collections.emptyList();
+    }
+
+    public Scene getScene(int sceneId) {
+        return persistService.loadPersistContainer().getScenes()
+                .stream()
+                .filter(scene -> scene.getId() == sceneId)
+                .findFirst()
+                .orElseThrow();
     }
 
     public Scene update(Scene scene) {
@@ -50,7 +61,12 @@ public class SceneService {
 
     public void show(Scene scene) {
         scene.getBulbStates().forEach((bulbId, bulbState) -> {
-            bulbCommandService.sendBulbService(bulbService.getBulb(bulbId), bulbState);
+            Bulb bulb = bulbService.getBulb(bulbId);
+            if(bulb != null) {
+                bulbCommandService.sendBulbService(bulb, bulbState);
+            } else {
+                System.out.println("Bulb does not exist: " + bulbId);
+            }
         });
     }
 
@@ -58,7 +74,14 @@ public class SceneService {
         return persistService.loadPersistContainer().getScenes().stream()
                 .map(Scene::getId)
                 .max(Integer::compare)
-                .orElse(1);
+                .orElse(0) + 1;
     }
 
+    public List<SimpleScene> getSimpleScenes() {
+        return persistService.loadPersistContainer()
+                .getScenes()
+                .stream()
+                .map(Scene::toSimpleScene)
+                .collect(Collectors.toList());
+    }
 }

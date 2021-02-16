@@ -30,7 +30,7 @@ public class PersistService {
         try {
             ObjectMapper mapper = new ObjectMapper();
             File file = getFile();
-            mapper.writeValue(file, persistContainer);
+            mapper.writerWithDefaultPrettyPrinter().writeValue(file, persistContainer);
             System.out.println("Written to: " + file);
         } catch (Exception e) {
             e.printStackTrace();

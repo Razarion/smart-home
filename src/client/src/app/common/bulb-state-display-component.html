@@ -1,5 +1,5 @@
 <div *ngIf="bulbState">
-  <div *ngIf="bulbState.power">
+  <div *ngIf="bulbState.power !== undefined">
     Power: {{bulbState.power}}
   </div>
   <div *ngIf="bulbState.hsv">

@@ -31,20 +31,20 @@ public class BulbCommandService {
 
     public void execute(Bulb bulb, BulbState bulbState) {
         try {
-            String command = null;
+            String command = "";
             if (bulbState.getPower() != null) {
                 if (bulbState.getPower()) {
-                    command = "{ \"id\": 1, \"method\": \"set_power\", \"params\":[\"on\", \"smooth\", 30]}\r\n";
+                    command += "{ \"id\": 1, \"method\": \"set_power\", \"params\":[\"on\", \"smooth\", 30]}\r\n";
                 } else {
-                    command = "{ \"id\": 1, \"method\": \"set_power\", \"params\":[\"off\", \"smooth\", 30]}\r\n";
+                    command += "{ \"id\": 1, \"method\": \"set_power\", \"params\":[\"off\", \"smooth\", 30]}\r\n";
                 }
             }
             if (bulbState.getHsv() != null) {
-                command = "{\"id\":1, \"method\": \"set_hsv\", \"params\":[" + bulbState.getHsv().getHue() + ", " + bulbState.getHsv().getSaturation() + ", \"smooth\", 30]}\r\n";
+                command += "{\"id\":1, \"method\": \"set_hsv\", \"params\":[" + bulbState.getHsv().getHue() + ", " + bulbState.getHsv().getSaturation() + ", \"smooth\", 30]}\r\n";
                 command += "{\"id\":1, \"method\": \"set_bright\", \"params\":[" + bulbState.getHsv().getBrightness() + ", \"smooth\", 30]}\r\n";
             }
 
-            if (command == null) {
+            if (command.isBlank()) {
                 return;
             }
             Socket socket = new Socket(bulb.getIp(), bulb.getPort());
@@ -54,7 +54,7 @@ public class BulbCommandService {
             InputStream input = socket.getInputStream();
             BufferedReader reader = new BufferedReader(new InputStreamReader(input));
             // Only read one result line. Ignore NOTIFICATION message
-            System.out.println(reader.readLine() + " " + bulb);
+            System.out.println(reader.readLine() + " " + bulb + " command: " + command);
             socket.close();
         } catch (Exception e) {
             e.printStackTrace();
