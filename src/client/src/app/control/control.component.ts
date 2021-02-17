@@ -4,7 +4,8 @@ import {SimpleScene} from "../dto/simple-scene";
 
 @Component({
   selector: 'control',
-  templateUrl: './control.component.html'
+  templateUrl: './control.component.html',
+  styleUrls: ['./control.component.css']
 })
 export class ControlComponent {
   simpleScenes: SimpleScene[] = [];

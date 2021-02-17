@@ -19,6 +19,8 @@ import {DropdownModule} from 'primeng/dropdown';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {SceneStateConfigComponent} from "./scene/scene-state-config.component";
 import {BulbStateDisplayComponent} from "./common/bulb-state-display-component";
+import {PanelModule} from 'primeng/panel';
+import {MenuModule} from "primeng/menu";
 
 @NgModule({
   declarations: [
@@ -42,7 +44,9 @@ import {BulbStateDisplayComponent} from "./common/bulb-state-display-component";
     SliderModule,
     InputTextModule,
     DropdownModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    PanelModule,
+    MenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

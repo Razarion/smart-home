@@ -1,9 +1,4 @@
-<nav>
-  <ul>
-    <li><a routerLink="/control" routerLinkActive="active">Control</a></li>
-    <li><a routerLink="/scene-config" routerLinkActive="active">Scene configuration</a></li>
-    <li><a routerLink="/bulb-config" routerLinkActive="active">Bulb configuration</a></li>
-  </ul>
-</nav>
-
 <router-outlet></router-outlet>
+<br>
+<button type="button" pButton icon="pi pi-bars" label="Navigation" (click)="menu.toggle($event)"></button>
+<p-menu #menu [popup]="true" [model]="menuItems"></p-menu>

@@ -1,8 +1,9 @@
-Scene Selection
-<p-button label="New" (click)="new()"></p-button>
-<p-dropdown [options]="scenes" [(ngModel)]="selectedScene" optionLabel="name"></p-dropdown>
-<p-button label="Save" (click)="save()"></p-button>
-<p-button label="Delete" (click)="delete()"></p-button>
-<input type="text" pInputText *ngIf="selectedScene" [(ngModel)]="selectedScene.name"/>
+<p-panel header="Scene Selection">
+  <p-button label="New" (click)="new()"></p-button>
+  <p-dropdown [options]="scenes" [(ngModel)]="selectedScene" optionLabel="name"></p-dropdown>
+  <p-button label="Save" (click)="save()"></p-button>
+  <p-button label="Delete" (click)="delete()"></p-button>
+  <input type="text" pInputText *ngIf="selectedScene" [(ngModel)]="selectedScene.name"/>
+</p-panel>
 
-<scene-state-config [scene] = "selectedScene"></scene-state-config>
+<scene-state-config [scene]="selectedScene"></scene-state-config>

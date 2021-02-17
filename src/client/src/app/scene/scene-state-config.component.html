@@ -14,7 +14,7 @@
   </ng-template>
 </p-table>
 
-Scene
+<h4>Bulbs in Scene</h4>
 <p-table *ngIf="scene" [value]="scene.bulbStates | keyvalue">
   <ng-template pTemplate="header">
     <tr>
@@ -27,12 +27,19 @@ Scene
   <ng-template pTemplate="body" let-keyValuePair>
     <tr>
       <td>{{idToName(keyValuePair.key)}}</td>
-      <td><bulb-state-display [bulbState]="keyValuePair.value"></bulb-state-display></td>
-      <td><p-checkbox value="{{keyValuePair.key}}" name="control-checkbox" [(ngModel)]="selectedBulbIds"></p-checkbox></td>
-      <td><p-button label="Delete" (click)="removeBulb(keyValuePair.key)"></p-button></td>
+      <td>
+        <bulb-state-display [bulbState]="keyValuePair.value"></bulb-state-display>
+      </td>
+      <td>
+        <p-checkbox value="{{keyValuePair.key}}" name="control-checkbox" [(ngModel)]="selectedBulbIds"></p-checkbox>
+      </td>
+      <td>
+        <p-button label="Delete" (click)="removeBulb(keyValuePair.key)"></p-button>
+      </td>
     </tr>
   </ng-template>
 </p-table>
-
-Config
-<bulb-state *ngIf="scene" (onChange)="onBulbStateChange($event)"></bulb-state>
+<br>
+<p-panel header="Bulbs State">
+  <bulb-state *ngIf="scene" (onChange)="onBulbStateChange($event)"></bulb-state>
+</p-panel>
