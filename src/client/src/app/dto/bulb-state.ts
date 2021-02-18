@@ -1,4 +1,4 @@
-export class Hsv {
+export class Hsb {
   public hue: number;
   public saturation: number;
   public brightness: number;
@@ -12,5 +12,5 @@ export class Hsv {
 
 export class BulbState {
   public power?: boolean;
-  public hsv?: Hsv;
+  public hsb?: Hsb;
 }

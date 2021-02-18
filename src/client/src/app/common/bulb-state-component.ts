@@ -1,5 +1,5 @@
 import {Component, EventEmitter, Output} from "@angular/core";
-import {BulbState, Hsv} from "../dto/bulb-state";
+import {BulbState, Hsb} from "../dto/bulb-state";
 
 @Component({
   selector: 'bulb-state',
@@ -9,19 +9,16 @@ export class BulbStateComponent {
   powerOptions: any[] = [{label: 'Off', value: false}, {label: 'On', value: true}];
   power: boolean = false;
   @Output() onChange = new EventEmitter<BulbState>();
-  hue: number = 0;
-  saturation: number = 0;
-  brightness: number = 0;
   bulbState: BulbState = new BulbState();
+  color: any;
 
   changePower(power: boolean) {
     this.bulbState.power = power;
     this.onChange.emit(this.bulbState)
   }
 
-  changeHsv() {
-    this.bulbState.hsv = new Hsv(this.hue, this.saturation, this.brightness);
+  changeHsb() {
+    this.bulbState.hsb = new Hsb(Math.min(this.color.h, 359), this.color.s, Math.max(this.color.b, 1));
     this.onChange.emit(this.bulbState)
   }
-
 }

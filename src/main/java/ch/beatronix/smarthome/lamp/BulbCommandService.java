@@ -2,7 +2,7 @@ package ch.beatronix.smarthome.lamp;
 
 import ch.beatronix.smarthome.model.Bulb;
 import ch.beatronix.smarthome.model.BulbState;
-import ch.beatronix.smarthome.model.Hsv;
+import ch.beatronix.smarthome.model.Hsb;
 import org.springframework.stereotype.Component;
 
 import java.io.BufferedReader;
@@ -22,7 +22,7 @@ public class BulbCommandService {
         BulbCommandService bulbCommandService = new BulbCommandService();
         // bulbCommandService.sendBulbService(new Bulb().ip("192.168.17.11").port(55443), new BulbState().power(true));
         // bulbCommandService.sendBulbService(new Bulb().ip("192.168.17.11").port(55443), new BulbState().power(false));
-        bulbCommandService.sendBulbService(new Bulb().ip("192.168.17.11").port(55443), new BulbState().hsv(new Hsv().hue(100).saturation(100).brightness(100)));
+        bulbCommandService.sendBulbService(new Bulb().ip("192.168.17.11").port(55443), new BulbState().hsb(new Hsb().hue(100).saturation(100).brightness(100)));
     }
 
     public void sendBulbService(Bulb bulb, BulbState bulbState) {
@@ -39,9 +39,9 @@ public class BulbCommandService {
                     command += "{ \"id\": 1, \"method\": \"set_power\", \"params\":[\"off\", \"smooth\", 30]}\r\n";
                 }
             }
-            if (bulbState.getHsv() != null) {
-                command += "{\"id\":1, \"method\": \"set_hsv\", \"params\":[" + bulbState.getHsv().getHue() + ", " + bulbState.getHsv().getSaturation() + ", \"smooth\", 30]}\r\n";
-                command += "{\"id\":1, \"method\": \"set_bright\", \"params\":[" + bulbState.getHsv().getBrightness() + ", \"smooth\", 30]}\r\n";
+            if (bulbState.getHsb() != null) {
+                command += "{\"id\":1, \"method\": \"set_hsv\", \"params\":[" + bulbState.getHsb().getHue() + ", " + bulbState.getHsb().getSaturation() + ", \"smooth\", 30]}\r\n";
+                command += "{\"id\":1, \"method\": \"set_bright\", \"params\":[" + bulbState.getHsb().getBrightness() + ", \"smooth\", 30]}\r\n";
             }
 
             if (command.isBlank()) {

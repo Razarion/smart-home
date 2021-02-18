@@ -1,6 +1,6 @@
 package ch.beatronix.smarthome.model;
 
-public class Hsv {
+public class Hsb {
     private double hue;
     private double saturation;
     private double brightness;
@@ -29,17 +29,17 @@ public class Hsv {
         this.brightness = brightness;
     }
 
-    public Hsv hue(double hue) {
+    public Hsb hue(double hue) {
         setHue(hue);
         return this;
     }
 
-    public Hsv saturation(double saturation) {
+    public Hsb saturation(double saturation) {
         setSaturation(saturation);
         return this;
     }
 
-    public Hsv brightness(double value) {
+    public Hsb brightness(double value) {
         setBrightness(value);
         return this;
     }

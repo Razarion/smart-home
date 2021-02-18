@@ -21,6 +21,7 @@ import {SceneStateConfigComponent} from "./scene/scene-state-config.component";
 import {BulbStateDisplayComponent} from "./common/bulb-state-display-component";
 import {PanelModule} from 'primeng/panel';
 import {MenuModule} from "primeng/menu";
+import {ColorPickerModule} from 'primeng/colorpicker';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import {MenuModule} from "primeng/menu";
     DropdownModule,
     BrowserAnimationsModule,
     PanelModule,
-    MenuModule
+    MenuModule,
+    ColorPickerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

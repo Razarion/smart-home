@@ -22,35 +22,35 @@
     "bulbStates" : {
       "0x00000000123f0e90" : {
         "power" : false,
-        "hsv" : null
+        "hsb" : null
       },
       "0x0000000007f1dfd6" : {
         "power" : false,
-        "hsv" : null
+        "hsb" : null
       },
       "0x0000000012ebf17e" : {
         "power" : false,
-        "hsv" : null
+        "hsb" : null
       },
       "0x00000000123f01be" : {
         "power" : false,
-        "hsv" : null
+        "hsb" : null
       },
       "0x0000000013f4014e" : {
         "power" : false,
-        "hsv" : null
+        "hsb" : null
       },
       "0x000000000766b696" : {
         "power" : false,
-        "hsv" : null
+        "hsb" : null
       },
       "0x0000000011748240" : {
         "power" : false,
-        "hsv" : null
+        "hsb" : null
       },
       "0x000000001170297e" : {
         "power" : false,
-        "hsv" : null
+        "hsb" : null
       }
     }
   }, {
@@ -59,7 +59,7 @@
     "bulbStates" : {
       "0x000000001170297e" : {
         "power" : true,
-        "hsv" : {
+        "hsb" : {
           "hue" : 0.0,
           "saturation" : 0.0,
           "brightness" : 100.0
@@ -67,7 +67,7 @@
       },
       "0x0000000011748240" : {
         "power" : true,
-        "hsv" : {
+        "hsb" : {
           "hue" : 0.0,
           "saturation" : 0.0,
           "brightness" : 100.0
@@ -75,7 +75,7 @@
       },
       "0x00000000123f01be" : {
         "power" : true,
-        "hsv" : {
+        "hsb" : {
           "hue" : 0.0,
           "saturation" : 0.0,
           "brightness" : 100.0
@@ -83,7 +83,7 @@
       },
       "0x0000000013f4014e" : {
         "power" : true,
-        "hsv" : {
+        "hsb" : {
           "hue" : 0.0,
           "saturation" : 0.0,
           "brightness" : 100.0
@@ -91,7 +91,7 @@
       },
       "0x000000000766b696" : {
         "power" : true,
-        "hsv" : {
+        "hsb" : {
           "hue" : 0.0,
           "saturation" : 0.0,
           "brightness" : 100.0

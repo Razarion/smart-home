@@ -1,12 +1,7 @@
 Power
 <p-selectButton [options]="powerOptions" [(ngModel)]="power" optionLabel="label" optionValue="value"
                 (onChange)="changePower(power)"></p-selectButton>
+
+Color
 <br>
-Hue
-<p-slider [(ngModel)]="hue" [min]="0" [max]="359" [step]="1" (onChange)="changeHsv()"></p-slider>
-<br>
-Saturation
-<p-slider [(ngModel)]="saturation" [min]="0" [max]="100" [step]="1" (onChange)="changeHsv()"></p-slider>
-<br>
-Brightness
-<p-slider [(ngModel)]="brightness" [min]="0" [max]="100" [step]="1" (onChange)="changeHsv()"></p-slider>
+<p-colorPicker [(ngModel)]="color" [inline]="true" format="hsb" (onChange)="changeHsb()"></p-colorPicker>
