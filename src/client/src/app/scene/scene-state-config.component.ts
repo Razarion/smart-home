@@ -9,12 +9,13 @@ import {Scene} from "../dto/scene";
   templateUrl: './scene-state-config.component.html'
 })
 export class SceneStateConfigComponent implements OnChanges {
-  bulbs: Bulb[] = [];
-  selectedBulbIds: string[] = [];
+  availableBulbs: Bulb[] = [];
+  sceneBulbIds: string[] = [];
+  controlledBulbIds: string[] = [];
   @Input() scene?: Scene;
 
   constructor(private http: HttpClient) {
-    this.http.get("/api/bulb/all").subscribe(value => this.bulbs = <Bulb[]>value);
+    this.http.get("/api/bulb/all").subscribe(value => this.availableBulbs = <Bulb[]>value);
   }
 
   addToScene(bulb: Bulb) {
@@ -24,14 +25,7 @@ export class SceneStateConfigComponent implements OnChanges {
       }
       this.scene.bulbStates[bulb.id] = new BulbState()
     }
-  }
-
-  idToName(bulbId: string): string {
-    let bulb = this.bulbs.find(bulb => bulb.id === bulbId);
-    if (bulb === undefined) {
-      return "???";
-    }
-    return bulb.name;
+    this.setupSceneBulbIds();
   }
 
   removeBulb(bulbId: string) {
@@ -39,13 +33,30 @@ export class SceneStateConfigComponent implements OnChanges {
       return;
     }
     delete this.scene.bulbStates[bulbId];
+    this.setupSceneBulbIds();
+    this.controlledBulbIds.splice(this.controlledBulbIds.indexOf(bulbId), 1);
+  }
+
+  idToName(bulbId: string): string {
+    let bulb = this.availableBulbs.find(bulb => bulb.id === bulbId);
+    if (bulb === undefined) {
+      return "???";
+    }
+    return bulb.name;
+  }
+
+  idToState(bulbId: string) {
+    if (this.scene == null || this.scene.bulbStates == null) {
+      return;
+    }
+    return this.scene.bulbStates[bulbId];
   }
 
   onBulbStateChange(bulbState: BulbState) {
     if (this.scene == null || this.scene.bulbStates == null) {
       return;
     }
-    this.selectedBulbIds.forEach(bulbId => {
+    this.controlledBulbIds.forEach(bulbId => {
       if (this.scene == null || this.scene.bulbStates == null) {
         return;
       }
@@ -55,6 +66,19 @@ export class SceneStateConfigComponent implements OnChanges {
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    this.selectedBulbIds = [];
+    this.sceneBulbIds = [];
+    this.controlledBulbIds = [];
+    this.setupSceneBulbIds();
+  }
+
+  private setupSceneBulbIds() {
+    this.sceneBulbIds = [];
+    if (this.scene == null || this.scene.bulbStates == null) {
+      return;
+    }
+    for (const [key] of Object.entries(this.scene.bulbStates)) {
+      this.sceneBulbIds.push(key);
+    }
+
   }
 }

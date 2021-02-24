@@ -1,5 +1,5 @@
 <h4>Available Bulbs</h4>
-<p-table [value]="bulbs">
+<p-table [value]="availableBulbs">
   <ng-template pTemplate="header">
     <tr>
       <th>Control</th>
@@ -9,32 +9,32 @@
   <ng-template pTemplate="body" let-bulb>
     <tr>
       <td>{{bulb.name}}</td>
-      <td><p-button label="Add to Scene" (click)="addToScene(bulb)" [disabled]="scene !== undefined && scene.bulbStates[bulb.id]"></p-button></td>
+      <td><p-button label="Add to Scene" (click)="addToScene(bulb)" [disabled]="sceneBulbIds.includes(bulb.id)"></p-button></td>
     </tr>
   </ng-template>
 </p-table>
 
 <h4>Bulbs in Scene</h4>
-<p-table *ngIf="scene" [value]="scene.bulbStates | keyvalue">
+<p-table *ngIf="scene" [value]="sceneBulbIds" [(selection)]="controlledBulbIds">
   <ng-template pTemplate="header">
     <tr>
       <th>Name</th>
       <th>State</th>
-      <th>Configure</th>
+      <th>Configure<p-tableHeaderCheckbox></p-tableHeaderCheckbox></th>
       <th>Delete</th>
     </tr>
   </ng-template>
-  <ng-template pTemplate="body" let-keyValuePair>
+  <ng-template pTemplate="body" let-bulbId>
     <tr>
-      <td>{{idToName(keyValuePair.key)}}</td>
+      <td>{{idToName(bulbId)}}</td>
       <td>
-        <bulb-state-display [bulbState]="keyValuePair.value"></bulb-state-display>
+        <bulb-state-display [bulbState]="idToState(bulbId)"></bulb-state-display>
       </td>
       <td>
-        <p-checkbox value="{{keyValuePair.key}}" name="control-checkbox" [(ngModel)]="selectedBulbIds"></p-checkbox>
+        <p-tableCheckbox [value]="bulbId"></p-tableCheckbox>
       </td>
       <td>
-        <p-button label="Delete" (click)="removeBulb(keyValuePair.key)"></p-button>
+        <p-button label="Delete" (click)="removeBulb(bulbId)"></p-button>
       </td>
     </tr>
   </ng-template>

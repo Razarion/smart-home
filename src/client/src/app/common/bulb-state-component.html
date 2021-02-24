@@ -1,7 +1,7 @@
 Power
 <p-selectButton [options]="powerOptions" [(ngModel)]="power" optionLabel="label" optionValue="value"
-                (onChange)="changePower(power)"></p-selectButton>
+                (onChange)="change()"></p-selectButton>
 
 Color
 <br>
-<p-colorPicker [(ngModel)]="color" [inline]="true" format="hsb" (onChange)="changeHsb()"></p-colorPicker>
+<p-colorPicker [(ngModel)]="color" [inline]="true" format="hsb" (onChange)="change()"></p-colorPicker>
