@@ -1,6 +1,8 @@
 import {Component, EventEmitter, Output} from "@angular/core";
 import {BulbState, Hsb} from "../dto/bulb-state";
-// import {debounce} from "debounce";
+// @ts-ignore
+import { debounce } from 'throttle-debounce';
+
 
 @Component({
   selector: 'bulb-state',
@@ -11,17 +13,26 @@ export class BulbStateComponent {
   power: boolean = false;
   @Output() onChange = new EventEmitter<BulbState>();
   color: any;
+  debounceFunc: any;
 
-  // change() {
-    // debounce(this.createAndFireBulbState, 100); ???
-  // }
+  constructor() {
+    let self = this;
+    this.debounceFunc = debounce(100, () => {
+      this.createAndFireBulbState(self)
+    });
+
+  }
 
   change() {
+    this.debounceFunc();
+  }
+
+  createAndFireBulbState(self: BulbStateComponent) {
     let bulbState: BulbState = new BulbState();
-    bulbState.power = this.power;
-    if (this.color !== undefined) {
-      bulbState.hsb = new Hsb(Math.min(this.color.h, 359), this.color.s, Math.max(this.color.b, 1));
+    bulbState.power = self.power;
+    if (self.color !== undefined) {
+      bulbState.hsb = new Hsb(Math.min(self.color.h, 359), self.color.s, Math.max(self.color.b, 1));
     }
-    this.onChange.emit(bulbState)
+    self.onChange.emit(bulbState)
   }
 }

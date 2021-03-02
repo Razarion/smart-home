@@ -17,43 +17,6 @@
     "0x000000001170297e" : "Zimmer Decke 2"
   },
   "scenes" : [ {
-    "name" : "Alle aus",
-    "id" : 1,
-    "bulbStates" : {
-      "0x00000000123f0e90" : {
-        "power" : false,
-        "hsb" : null
-      },
-      "0x0000000007f1dfd6" : {
-        "power" : false,
-        "hsb" : null
-      },
-      "0x0000000012ebf17e" : {
-        "power" : false,
-        "hsb" : null
-      },
-      "0x00000000123f01be" : {
-        "power" : false,
-        "hsb" : null
-      },
-      "0x0000000013f4014e" : {
-        "power" : false,
-        "hsb" : null
-      },
-      "0x000000000766b696" : {
-        "power" : false,
-        "hsb" : null
-      },
-      "0x0000000011748240" : {
-        "power" : false,
-        "hsb" : null
-      },
-      "0x000000001170297e" : {
-        "power" : false,
-        "hsb" : null
-      }
-    }
-  }, {
     "name" : "Zimmer hell",
     "id" : 2,
     "bulbStates" : {
@@ -96,6 +59,411 @@
           "saturation" : 0.0,
           "brightness" : 100.0
         }
+      }
+    }
+  }, {
+    "name" : "Alle aus",
+    "id" : 1,
+    "bulbStates" : {
+      "0x00000000123f0e90" : {
+        "power" : false,
+        "hsb" : null
+      },
+      "0x0000000007f1dfd6" : {
+        "power" : false,
+        "hsb" : null
+      },
+      "0x0000000012ebf17e" : {
+        "power" : false,
+        "hsb" : null
+      },
+      "0x00000000123f01be" : {
+        "power" : false,
+        "hsb" : null
+      },
+      "0x0000000013f4014e" : {
+        "power" : false,
+        "hsb" : null
+      },
+      "0x000000000766b696" : {
+        "power" : false,
+        "hsb" : null
+      },
+      "0x0000000011748240" : {
+        "power" : false,
+        "hsb" : null
+      },
+      "0x000000001170297e" : {
+        "power" : false,
+        "hsb" : null
+      },
+      "0x0000000011744a50" : {
+        "power" : false,
+        "hsb" : null
+      },
+      "0x0000000007d1310e" : {
+        "power" : false,
+        "hsb" : null
+      },
+      "0x0000000007d45f9f" : {
+        "power" : false,
+        "hsb" : null
+      },
+      "0x00000000123f0032" : {
+        "power" : false,
+        "hsb" : null
+      },
+      "0x000000001174880c" : {
+        "power" : false,
+        "hsb" : null
+      },
+      "0x0000000011748d34" : {
+        "power" : false,
+        "hsb" : null
+      },
+      "0x0000000007d4468c" : {
+        "power" : false,
+        "hsb" : null
+      }
+    }
+  }, {
+    "name" : "Chill",
+    "id" : 3,
+    "bulbStates" : {
+      "0x0000000011744a50" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 34.0,
+          "saturation" : 82.0,
+          "brightness" : 10.0
+        }
+      },
+      "0x00000000123f0e90" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 34.0,
+          "saturation" : 82.0,
+          "brightness" : 10.0
+        }
+      },
+      "0x0000000007f1dfd6" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 34.0,
+          "saturation" : 82.0,
+          "brightness" : 10.0
+        }
+      },
+      "0x0000000012ebf17e" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 34.0,
+          "saturation" : 82.0,
+          "brightness" : 10.0
+        }
+      },
+      "0x0000000007d4468c" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 34.0,
+          "saturation" : 82.0,
+          "brightness" : 10.0
+        }
+      },
+      "0x00000000123f01be" : {
+        "power" : null,
+        "hsb" : {
+          "hue" : 16.0,
+          "saturation" : 85.0,
+          "brightness" : 83.0
+        }
+      },
+      "0x000000000766b696" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 24.0,
+          "saturation" : 50.0,
+          "brightness" : 89.0
+        }
+      },
+      "0x0000000013f4014e" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 24.0,
+          "saturation" : 50.0,
+          "brightness" : 89.0
+        }
+      },
+      "0x0000000011748240" : {
+        "power" : null,
+        "hsb" : {
+          "hue" : 16.0,
+          "saturation" : 85.0,
+          "brightness" : 83.0
+        }
+      },
+      "0x000000001170297e" : {
+        "power" : null,
+        "hsb" : {
+          "hue" : 16.0,
+          "saturation" : 85.0,
+          "brightness" : 83.0
+        }
+      },
+      "0x0000000007d45f9f" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 34.0,
+          "saturation" : 82.0,
+          "brightness" : 10.0
+        }
+      },
+      "0x0000000007d1310e" : {
+        "power" : null,
+        "hsb" : {
+          "hue" : 16.0,
+          "saturation" : 85.0,
+          "brightness" : 83.0
+        }
+      },
+      "0x00000000123f0032" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 34.0,
+          "saturation" : 82.0,
+          "brightness" : 10.0
+        }
+      },
+      "0x000000001174880c" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 34.0,
+          "saturation" : 82.0,
+          "brightness" : 10.0
+        }
+      },
+      "0x0000000011748d34" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 34.0,
+          "saturation" : 82.0,
+          "brightness" : 10.0
+        }
+      }
+    }
+  }, {
+    "name" : "Hell",
+    "id" : 4,
+    "bulbStates" : {
+      "0x0000000007f1dfd6" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 0.0,
+          "saturation" : 0.0,
+          "brightness" : 100.0
+        }
+      },
+      "0x0000000011744a50" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 0.0,
+          "saturation" : 0.0,
+          "brightness" : 100.0
+        }
+      },
+      "0x0000000007d1310e" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 0.0,
+          "saturation" : 0.0,
+          "brightness" : 100.0
+        }
+      },
+      "0x00000000123f01be" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 0.0,
+          "saturation" : 0.0,
+          "brightness" : 100.0
+        }
+      },
+      "0x0000000013f4014e" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 0.0,
+          "saturation" : 0.0,
+          "brightness" : 100.0
+        }
+      },
+      "0x0000000007d45f9f" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 0.0,
+          "saturation" : 0.0,
+          "brightness" : 100.0
+        }
+      },
+      "0x00000000123f0032" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 0.0,
+          "saturation" : 0.0,
+          "brightness" : 100.0
+        }
+      },
+      "0x00000000123f0e90" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 0.0,
+          "saturation" : 0.0,
+          "brightness" : 100.0
+        }
+      },
+      "0x000000001174880c" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 0.0,
+          "saturation" : 0.0,
+          "brightness" : 100.0
+        }
+      },
+      "0x0000000012ebf17e" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 0.0,
+          "saturation" : 0.0,
+          "brightness" : 100.0
+        }
+      },
+      "0x0000000011748d34" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 0.0,
+          "saturation" : 0.0,
+          "brightness" : 100.0
+        }
+      },
+      "0x0000000007d4468c" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 0.0,
+          "saturation" : 0.0,
+          "brightness" : 100.0
+        }
+      },
+      "0x000000000766b696" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 0.0,
+          "saturation" : 0.0,
+          "brightness" : 100.0
+        }
+      },
+      "0x0000000011748240" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 0.0,
+          "saturation" : 0.0,
+          "brightness" : 100.0
+        }
+      },
+      "0x000000001170297e" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 0.0,
+          "saturation" : 0.0,
+          "brightness" : 100.0
+        }
+      }
+    }
+  }, {
+    "name" : "Zimmer Chill",
+    "id" : 5,
+    "bulbStates" : {
+      "0x000000001170297e" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 7.0,
+          "saturation" : 94.0,
+          "brightness" : 18.0
+        }
+      },
+      "0x0000000011748240" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 7.0,
+          "saturation" : 94.0,
+          "brightness" : 18.0
+        }
+      },
+      "0x000000000766b696" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 26.0,
+          "saturation" : 75.0,
+          "brightness" : 76.0
+        }
+      },
+      "0x0000000013f4014e" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 26.0,
+          "saturation" : 75.0,
+          "brightness" : 76.0
+        }
+      },
+      "0x00000000123f01be" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 7.0,
+          "saturation" : 94.0,
+          "brightness" : 18.0
+        }
+      }
+    }
+  }, {
+    "name" : "Nur Zimmer",
+    "id" : 6,
+    "bulbStates" : {
+      "0x0000000007f1dfd6" : {
+        "power" : false,
+        "hsb" : null
+      },
+      "0x0000000011744a50" : {
+        "power" : false,
+        "hsb" : null
+      },
+      "0x0000000007d1310e" : {
+        "power" : false,
+        "hsb" : null
+      },
+      "0x0000000007d45f9f" : {
+        "power" : false,
+        "hsb" : null
+      },
+      "0x00000000123f0032" : {
+        "power" : false,
+        "hsb" : null
+      },
+      "0x00000000123f0e90" : {
+        "power" : false,
+        "hsb" : null
+      },
+      "0x000000001174880c" : {
+        "power" : false,
+        "hsb" : null
+      },
+      "0x0000000012ebf17e" : {
+        "power" : false,
+        "hsb" : null
+      },
+      "0x0000000011748d34" : {
+        "power" : false,
+        "hsb" : null
+      },
+      "0x0000000007d4468c" : {
+        "power" : false,
+        "hsb" : null
       }
     }
   } ]
