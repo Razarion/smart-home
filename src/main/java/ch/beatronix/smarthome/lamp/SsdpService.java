@@ -2,6 +2,8 @@ package ch.beatronix.smarthome.lamp;
 
 import ch.beatronix.smarthome.model.Bulb;
 import ch.beatronix.smarthome.service.BulbService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
@@ -13,6 +15,7 @@ import java.nio.charset.StandardCharsets;
 
 @Component
 public class SsdpService {
+    private static final Logger logger = LoggerFactory.getLogger(SsdpService.class);
     public static final String DISCOVER_MESSAGE_ROOT_DEVICE = "M-SEARCH * HTTP/1.1\r\nHOST: 239.255.255.250:1982\r\nMAN: \"ssdp:discover\"\r\nST: wifi_bulb\r\n";
     public static final int SSDP_SEARCH_PORT = 1982;
     @Inject
@@ -31,11 +34,11 @@ public class SsdpService {
                         DatagramPacket packet = new DatagramPacket(buf, buf.length);
                         socket.receive(packet);
                         Bulb bulb = BulbFactory.create(new String(packet.getData()));
-                        System.out.println("Received: " + bulb);
+                        logger.info("Received: " + bulb);
                         bulbService.onBulbDiscovered(bulb);
                     }
                 } catch (Exception e) {
-                    e.printStackTrace();
+                    logger.error("SSDP listener failed", e);
                 }
             });
             thread.start();
@@ -44,13 +47,13 @@ public class SsdpService {
             DatagramPacket p = new DatagramPacket(pack, pack.length);
             p.setAddress(InetAddress.getByName("239.255.255.250"));
             p.setPort(SSDP_SEARCH_PORT);
-            System.out.println("---- start ssdp scan ----");
+            logger.info("Start ssdp scan");
             socket.send(p);
 
             Thread.sleep(5000);
             socket.close();
         } catch (Exception e) {
-            e.printStackTrace();
+            logger.error("SSDP failed", e);
         }
     }
 }

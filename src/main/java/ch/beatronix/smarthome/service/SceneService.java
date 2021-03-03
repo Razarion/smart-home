@@ -5,6 +5,8 @@ import ch.beatronix.smarthome.model.Bulb;
 import ch.beatronix.smarthome.model.PersistContainer;
 import ch.beatronix.smarthome.model.Scene;
 import ch.beatronix.smarthome.model.SimpleScene;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import javax.inject.Inject;
@@ -14,6 +16,7 @@ import java.util.stream.Collectors;
 
 @Component
 public class SceneService {
+    private static final Logger logger = LoggerFactory.getLogger(SceneService.class);
     @Inject
     private PersistService persistService;
     @Inject
@@ -65,7 +68,7 @@ public class SceneService {
             if(bulb != null) {
                 bulbCommandService.sendBulbService(bulb, bulbState);
             } else {
-                System.out.println("Bulb does not exist: " + bulbId);
+                logger.warn("Bulb does not exist: " + bulbId);
             }
         });
     }

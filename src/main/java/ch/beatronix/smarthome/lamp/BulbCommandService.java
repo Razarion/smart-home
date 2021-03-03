@@ -3,6 +3,8 @@ package ch.beatronix.smarthome.lamp;
 import ch.beatronix.smarthome.model.Bulb;
 import ch.beatronix.smarthome.model.BulbState;
 import ch.beatronix.smarthome.model.Hsb;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import java.io.BufferedReader;
@@ -16,6 +18,7 @@ import java.util.concurrent.Executors;
 
 @Component
 public class BulbCommandService {
+    private static final Logger logger = LoggerFactory.getLogger(BulbCommandService.class);
     private final ExecutorService executor = Executors.newFixedThreadPool(20);
 
     public static void main(String[] args) {
@@ -54,10 +57,10 @@ public class BulbCommandService {
             InputStream input = socket.getInputStream();
             BufferedReader reader = new BufferedReader(new InputStreamReader(input));
             // Only read one result line. Ignore NOTIFICATION message
-            System.out.println(reader.readLine() + " " + bulb + " command: " + command);
+            logger.info(reader.readLine() + " " + bulb + " command: " + command);
             socket.close();
         } catch (Exception e) {
-            e.printStackTrace();
+            logger.info("Send command failed", e);
         }
     }
 }

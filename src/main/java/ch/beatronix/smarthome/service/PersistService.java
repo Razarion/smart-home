@@ -2,6 +2,8 @@ package ch.beatronix.smarthome.service;
 
 import ch.beatronix.smarthome.model.PersistContainer;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import java.io.File;
@@ -10,11 +12,13 @@ import java.net.URISyntaxException;
 
 @Component
 public class PersistService {
+    private static final Logger logger = LoggerFactory.getLogger(PersistService.class);
+
     public PersistContainer loadPersistContainer() {
         try {
             ObjectMapper mapper = new ObjectMapper();
             File file = getFile();
-            System.out.println("Read from: " + file);
+            logger.info("Read from: " + file);
             PersistContainer persistContainer = mapper.readValue(file, PersistContainer.class);
             if (persistContainer == null) {
                 persistContainer = new PersistContainer();
@@ -31,9 +35,9 @@ public class PersistService {
             ObjectMapper mapper = new ObjectMapper();
             File file = getFile();
             mapper.writerWithDefaultPrettyPrinter().writeValue(file, persistContainer);
-            System.out.println("Written to: " + file);
+            logger.info("Written to: " + file);
         } catch (Exception e) {
-            e.printStackTrace();
+            logger.error("Save persist container failed", e);
         }
 
     }
