@@ -15,7 +15,13 @@ export class SceneStateConfigComponent implements OnChanges {
   @Input() scene?: Scene;
 
   constructor(private http: HttpClient) {
-    this.http.get("/api/bulb/all").subscribe(value => this.availableBulbs = <Bulb[]>value);
+    this.http.get("/api/bulb/all").subscribe(value => {
+      this.availableBulbs = (<Bulb[]>value).sort((a: Bulb, b: Bulb) => {
+        let nA: string = a.name != null ? a.name.toUpperCase() : "";
+        let nB: string = b.name != null ? b.name.toUpperCase() : "";
+        return nA.localeCompare(nB);
+      });
+    });
   }
 
   addToScene(bulb: Bulb) {

@@ -8,12 +8,10 @@ import {Scene} from "../dto/scene";
   templateUrl: './scene-config.component.html'
 })
 export class SceneConfigComponent {
-  bulbs: Bulb[] = [];
   scenes: Scene[] = [];
   selectedScene?: Scene;
 
   constructor(private http: HttpClient) {
-    this.http.get("/api/bulb/all").subscribe(value => this.bulbs = <Bulb[]>value);
     this.http.get("/api/scene/all").subscribe(value => {
       this.scenes = <Scene[]>value;
       if (this.scenes.length > 0) {
