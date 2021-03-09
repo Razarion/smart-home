@@ -647,5 +647,30 @@
         "hsb" : null
       }
     }
+  }, {
+    "name" : "Zimmer aus",
+    "id" : 9,
+    "bulbStates" : {
+      "0x00000000123f01be" : {
+        "power" : false,
+        "hsb" : null
+      },
+      "0x000000001170297e" : {
+        "power" : false,
+        "hsb" : null
+      },
+      "0x0000000011748240" : {
+        "power" : false,
+        "hsb" : null
+      },
+      "0x000000000766b696" : {
+        "power" : false,
+        "hsb" : null
+      },
+      "0x0000000013f4014e" : {
+        "power" : false,
+        "hsb" : null
+      }
+    }
   } ]
 }

@@ -1,6 +1,7 @@
-<script src="../common/bulb-state-display-component.ts"></script>
-<div *ngFor='let scene of simpleScenes' class="scene-button-grid">
-  <div (click)="activateScene(scene.id)" class="scene-button">
-    {{scene.name}}
+<div class="p-grid">
+  <div class="p-col" *ngFor="let simpleScene of simpleScenes">
+    <div [class]="'box'">
+      <p-button label="{{simpleScene.name}}" (click)="activateScene(simpleScene.id)" [style]="{height:'100px', width:'100px'}"></p-button>
+    </div>
   </div>
 </div>
