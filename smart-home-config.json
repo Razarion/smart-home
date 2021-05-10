@@ -3,12 +3,12 @@
     "0x0000000007f1dfd6" : "Gang",
     "0x0000000007d1310e" : "Stube Decke 1",
     "0x00000000123f01be" : "Zimmer Decke 1",
-    "0x0000000013f4014e" : "Zimmer hinten rechts",
+    "0x0000000012ebf17e" : "Zimmer hinten rechts",
     "0x0000000007d45f9f" : "Küche",
     "0x00000000123f0032" : "Stube Decke 2",
     "0x00000000123f0e90" : "Stube hinten oben",
     "0x000000001174880c" : "Stube Decke 3",
-    "0x0000000012ebf17e" : "Stube hinten unten",
+    "0x0000000013f4014e" : "Stube hinten unten",
     "0x0000000011748d34" : "Stube Decke 4",
     "0x0000000007d4468c" : "Eingang",
     "0x000000000766b696" : "Zimmer hinten links",
@@ -648,6 +648,266 @@
       }
     }
   }, {
+    "name" : "Rot",
+    "id" : 10,
+    "bulbStates" : {
+      "0x0000000007f1dfd6" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 0.0,
+          "saturation" : 100.0,
+          "brightness" : 100.0
+        }
+      },
+      "0x0000000007d45f9f" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 0.0,
+          "saturation" : 100.0,
+          "brightness" : 100.0
+        }
+      },
+      "0x0000000011744a50" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 0.0,
+          "saturation" : 100.0,
+          "brightness" : 100.0
+        }
+      },
+      "0x00000000123f0032" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 0.0,
+          "saturation" : 100.0,
+          "brightness" : 100.0
+        }
+      },
+      "0x000000001174880c" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 0.0,
+          "saturation" : 100.0,
+          "brightness" : 100.0
+        }
+      },
+      "0x0000000011748d34" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 0.0,
+          "saturation" : 100.0,
+          "brightness" : 100.0
+        }
+      },
+      "0x00000000123f0e90" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 0.0,
+          "saturation" : 100.0,
+          "brightness" : 100.0
+        }
+      },
+      "0x0000000012ebf17e" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 0.0,
+          "saturation" : 100.0,
+          "brightness" : 100.0
+        }
+      },
+      "0x00000000123f01be" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 0.0,
+          "saturation" : 100.0,
+          "brightness" : 100.0
+        }
+      },
+      "0x000000001170297e" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 0.0,
+          "saturation" : 100.0,
+          "brightness" : 100.0
+        }
+      },
+      "0x0000000011748240" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 0.0,
+          "saturation" : 100.0,
+          "brightness" : 100.0
+        }
+      },
+      "0x000000000766b696" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 0.0,
+          "saturation" : 100.0,
+          "brightness" : 100.0
+        }
+      },
+      "0x0000000013f4014e" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 0.0,
+          "saturation" : 100.0,
+          "brightness" : 100.0
+        }
+      },
+      "0x0000000007d1310e" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 0.0,
+          "saturation" : 100.0,
+          "brightness" : 100.0
+        }
+      }
+    }
+  }, {
+    "name" : "Test",
+    "id" : 11,
+    "bulbStates" : null
+  }, {
+    "name" : "Zimmer Chill",
+    "id" : 5,
+    "bulbStates" : {
+      "0x000000001170297e" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 7.0,
+          "saturation" : 94.0,
+          "brightness" : 18.0
+        }
+      },
+      "0x0000000011748240" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 7.0,
+          "saturation" : 94.0,
+          "brightness" : 18.0
+        }
+      },
+      "0x000000000766b696" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 19.0,
+          "saturation" : 55.0,
+          "brightness" : 66.0
+        }
+      },
+      "0x00000000123f01be" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 7.0,
+          "saturation" : 94.0,
+          "brightness" : 18.0
+        }
+      },
+      "0x00000000123f0e90" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 19.0,
+          "saturation" : 55.0,
+          "brightness" : 66.0
+        }
+      }
+    }
+  }, {
+    "name" : "Nur Zimmer",
+    "id" : 6,
+    "bulbStates" : {
+      "0x0000000007f1dfd6" : {
+        "power" : false,
+        "hsb" : null
+      },
+      "0x0000000011744a50" : {
+        "power" : false,
+        "hsb" : null
+      },
+      "0x0000000007d1310e" : {
+        "power" : false,
+        "hsb" : null
+      },
+      "0x0000000007d45f9f" : {
+        "power" : false,
+        "hsb" : null
+      },
+      "0x00000000123f0032" : {
+        "power" : false,
+        "hsb" : null
+      },
+      "0x000000001174880c" : {
+        "power" : false,
+        "hsb" : null
+      },
+      "0x0000000012ebf17e" : {
+        "power" : false,
+        "hsb" : null
+      },
+      "0x0000000011748d34" : {
+        "power" : false,
+        "hsb" : null
+      },
+      "0x0000000007d4468c" : {
+        "power" : false,
+        "hsb" : null
+      },
+      "0x0000000013f4014e" : {
+        "power" : false,
+        "hsb" : {
+          "hue" : 19.0,
+          "saturation" : 55.0,
+          "brightness" : 66.0
+        }
+      }
+    }
+  }, {
+    "name" : "Zimmer hell",
+    "id" : 2,
+    "bulbStates" : {
+      "0x000000001170297e" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 0.0,
+          "saturation" : 0.0,
+          "brightness" : 100.0
+        }
+      },
+      "0x0000000011748240" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 0.0,
+          "saturation" : 0.0,
+          "brightness" : 100.0
+        }
+      },
+      "0x00000000123f01be" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 0.0,
+          "saturation" : 0.0,
+          "brightness" : 100.0
+        }
+      },
+      "0x000000000766b696" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 0.0,
+          "saturation" : 0.0,
+          "brightness" : 100.0
+        }
+      },
+      "0x00000000123f0e90" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 19.0,
+          "saturation" : 0.0,
+          "brightness" : 100.0
+        }
+      }
+    }
+  }, {
     "name" : "Zimmer aus",
     "id" : 9,
     "bulbStates" : {
@@ -667,9 +927,13 @@
         "power" : false,
         "hsb" : null
       },
-      "0x0000000013f4014e" : {
+      "0x00000000123f0e90" : {
         "power" : false,
-        "hsb" : null
+        "hsb" : {
+          "hue" : 19.0,
+          "saturation" : 0.0,
+          "brightness" : 100.0
+        }
       }
     }
   } ]
