@@ -26,6 +26,7 @@ public class BulbService {
     }
 
     public void onBulbDiscovered(Bulb bulb) {
+        bulbs.remove(bulb);
         bulbs.add(bulb);
         PersistContainer persistContainer = persistService.loadPersistContainer();
         bulb.setName(persistContainer.getIdNames().get(bulb.getId()));
