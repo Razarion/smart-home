@@ -1,0 +1,11 @@
+How To Autostart Apps In Rasbian LXDE Desktop
+https://www.raspberrypi-spy.co.uk/2014/05/how-to-autostart-apps-in-rasbian-lxde-desktop/
+
+Where do I place xset commands for xinit?
+https://forums.raspberrypi.com/viewtopic.php?t=161323
+
+.config/lxsession/LXDE-pi/autostart
+---
+xset s 3
+/usr/bin/chromium-browser --kiosk http://localhost:8080
+---

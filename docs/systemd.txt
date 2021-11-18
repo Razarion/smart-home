@@ -1,0 +1,25 @@
+Run a Java Application as a Service on Linux
+https://www.shubhamdipt.com/blog/how-to-create-a-systemd-service-in-linux/
+
+/etc/systemd/system/smart-home.service
+--------------
+[Unit]
+Description=Smart Home
+
+[Service]
+WorkingDirectory=/home/pi/smart-home
+ExecStart=/bin/bash -c 'java -jar smart-home-0.0.1-SNAPSHOT.jar &> log.txt'
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+--------------
+
+control
+--------------
+sudo systemctl status example.service
+sudo nano smart-home.service
+
+sudo systemctl daemon-reload
+sudo systemctl start your-service.service
+sudo systemctl enable example.service
