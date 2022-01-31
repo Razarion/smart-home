@@ -2,7 +2,6 @@ package ch.beatronix.smarthome.lamp;
 
 import ch.beatronix.smarthome.model.Bulb;
 import ch.beatronix.smarthome.model.BulbState;
-import ch.beatronix.smarthome.model.Hsb;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
@@ -21,14 +20,7 @@ public class BulbCommandService {
     private static final Logger logger = LoggerFactory.getLogger(BulbCommandService.class);
     private final ExecutorService executor = Executors.newFixedThreadPool(20);
 
-    public static void main(String[] args) {
-        BulbCommandService bulbCommandService = new BulbCommandService();
-        // bulbCommandService.sendBulbService(new Bulb().ip("192.168.17.11").port(55443), new BulbState().power(true));
-        // bulbCommandService.sendBulbService(new Bulb().ip("192.168.17.11").port(55443), new BulbState().power(false));
-        bulbCommandService.sendBulbService(new Bulb().ip("192.168.17.11").port(55443), new BulbState().hsb(new Hsb().hue(100).saturation(100).brightness(100)));
-    }
-
-    public void sendBulbService(Bulb bulb, BulbState bulbState) {
+    public void executeAsync(Bulb bulb, BulbState bulbState) {
         executor.submit(() -> execute(bulb, bulbState));
     }
 

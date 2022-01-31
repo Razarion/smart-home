@@ -66,7 +66,7 @@ public class SceneService {
         scene.getBulbStates().forEach((bulbId, bulbState) -> {
             Bulb bulb = bulbService.getBulb(bulbId);
             if(bulb != null) {
-                bulbCommandService.sendBulbService(bulb, bulbState);
+                bulbCommandService.executeAsync(bulb, bulbState);
             } else {
                 logger.warn("Bulb does not exist: " + bulbId);
             }

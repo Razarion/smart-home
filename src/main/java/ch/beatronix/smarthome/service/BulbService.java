@@ -40,7 +40,7 @@ public class BulbService {
     }
 
     public void bulbStates(BulbState bulbState, List<String> bulbIds) {
-        bulbIds.forEach(bulbId -> bulbCommandService.sendBulbService(getBulb(bulbId), bulbState));
+        bulbIds.forEach(bulbId -> bulbCommandService.executeAsync(getBulb(bulbId), bulbState));
     }
 
     public void saveBulbNames(Map<String, String> bulbNames) {
