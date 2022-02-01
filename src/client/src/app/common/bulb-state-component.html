@@ -1,7 +1,13 @@
 Power
 <p-selectButton [options]="powerOptions" [(ngModel)]="power" optionLabel="label" optionValue="value"
                 (onChange)="change()"></p-selectButton>
-
+<br>
 Color
 <br>
 <p-colorPicker [(ngModel)]="color" [inline]="true" format="hsb" (onChange)="change()"></p-colorPicker>
+
+<br>
+Color temperature
+<br>
+<p-slider [(ngModel)]="colorTemperature" [min]="1700" [max]="6500" [step]="1" (onChange)="change()"
+          [style]="{width:'200px'}"></p-slider>

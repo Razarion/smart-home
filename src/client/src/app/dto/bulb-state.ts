@@ -13,4 +13,5 @@ export class Hsb {
 export class BulbState {
   public power?: boolean;
   public hsb?: Hsb;
+  public colorTemperature?: number;
 }

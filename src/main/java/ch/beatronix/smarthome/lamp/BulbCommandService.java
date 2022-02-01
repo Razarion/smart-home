@@ -17,6 +17,7 @@ import java.util.concurrent.Executors;
 
 @Component
 public class BulbCommandService {
+    private int idGenerator = 1;
     private static final Logger logger = LoggerFactory.getLogger(BulbCommandService.class);
     private final ExecutorService executor = Executors.newFixedThreadPool(20);
 
@@ -29,14 +30,17 @@ public class BulbCommandService {
             String command = "";
             if (bulbState.getPower() != null) {
                 if (bulbState.getPower()) {
-                    command += "{ \"id\": 1, \"method\": \"set_power\", \"params\":[\"on\", \"smooth\", 30]}\r\n";
+                    command += "{ \"id\": " + generateId() + ", \"method\": \"set_power\", \"params\":[\"on\", \"smooth\", 30]}\r\n";
                 } else {
-                    command += "{ \"id\": 1, \"method\": \"set_power\", \"params\":[\"off\", \"smooth\", 30]}\r\n";
+                    command += "{ \"id\": " + generateId() + ", \"method\": \"set_power\", \"params\":[\"off\", \"smooth\", 30]}\r\n";
                 }
             }
             if (bulbState.getHsb() != null) {
-                command += "{\"id\":1, \"method\": \"set_hsv\", \"params\":[" + bulbState.getHsb().getHue() + ", " + bulbState.getHsb().getSaturation() + ", \"smooth\", 30]}\r\n";
-                command += "{\"id\":1, \"method\": \"set_bright\", \"params\":[" + bulbState.getHsb().getBrightness() + ", \"smooth\", 30]}\r\n";
+                command += "{\"id\":" + generateId() + ", \"method\": \"set_hsv\", \"params\":[" + bulbState.getHsb().getHue() + ", " + bulbState.getHsb().getSaturation() + ", \"smooth\", 30]}\r\n";
+                command += "{\"id\":" + generateId() + ", \"method\": \"set_bright\", \"params\":[" + bulbState.getHsb().getBrightness() + ", \"smooth\", 30]}\r\n";
+            }
+            if (bulbState.getColorTemperature() != null) {
+                command += "{\"id\":" + generateId() + ", \"method\": \"set_ct_abx\", \"params\":[" + bulbState.getColorTemperature() + ", \"smooth\", 30]}\r\n";
             }
 
             if (command.isBlank()) {
@@ -54,5 +58,15 @@ public class BulbCommandService {
         } catch (Exception e) {
             logger.info("Send command failed", e);
         }
+    }
+
+    private String generateId() {
+        idGenerator++;
+        if (idGenerator < 1) {
+            idGenerator = 1;
+        } else if (idGenerator > 10000) {
+            idGenerator = 1;
+        }
+        return Integer.toString(idGenerator);
     }
 }
