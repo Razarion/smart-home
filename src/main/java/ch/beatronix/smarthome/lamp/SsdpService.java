@@ -50,7 +50,7 @@ public class SsdpService {
             logger.info("Start ssdp scan");
             socket.send(p);
 
-            Thread.sleep(5000);
+            Thread.sleep(5000); // TODO blocks startup Remove
             socket.close();
         } catch (Exception e) {
             logger.error("SSDP failed", e);
