@@ -17,115 +17,6 @@
     "0x000000001170297e" : "Zimmer Decke 2"
   },
   "scenes" : [ {
-    "name" : "Zimmer Chill",
-    "id" : 5,
-    "bulbStates" : {
-      "0x000000001170297e" : {
-        "power" : true,
-        "hsb" : {
-          "hue" : 7.0,
-          "saturation" : 94.0,
-          "brightness" : 18.0
-        },
-        "colorTemperature" : null
-      },
-      "0x0000000011748240" : {
-        "power" : true,
-        "hsb" : {
-          "hue" : 7.0,
-          "saturation" : 94.0,
-          "brightness" : 18.0
-        },
-        "colorTemperature" : null
-      },
-      "0x000000000766b696" : {
-        "power" : true,
-        "hsb" : {
-          "hue" : 19.0,
-          "saturation" : 55.0,
-          "brightness" : 66.0
-        },
-        "colorTemperature" : null
-      },
-      "0x00000000123f01be" : {
-        "power" : true,
-        "hsb" : {
-          "hue" : 7.0,
-          "saturation" : 94.0,
-          "brightness" : 18.0
-        },
-        "colorTemperature" : null
-      },
-      "0x00000000123f0e90" : {
-        "power" : true,
-        "hsb" : {
-          "hue" : 19.0,
-          "saturation" : 55.0,
-          "brightness" : 66.0
-        },
-        "colorTemperature" : null
-      }
-    }
-  }, {
-    "name" : "Nur Zimmer",
-    "id" : 6,
-    "bulbStates" : {
-      "0x0000000007f1dfd6" : {
-        "power" : false,
-        "hsb" : null,
-        "colorTemperature" : null
-      },
-      "0x0000000011744a50" : {
-        "power" : false,
-        "hsb" : null,
-        "colorTemperature" : null
-      },
-      "0x0000000007d1310e" : {
-        "power" : false,
-        "hsb" : null,
-        "colorTemperature" : null
-      },
-      "0x0000000007d45f9f" : {
-        "power" : false,
-        "hsb" : null,
-        "colorTemperature" : null
-      },
-      "0x00000000123f0032" : {
-        "power" : false,
-        "hsb" : null,
-        "colorTemperature" : null
-      },
-      "0x000000001174880c" : {
-        "power" : false,
-        "hsb" : null,
-        "colorTemperature" : null
-      },
-      "0x0000000012ebf17e" : {
-        "power" : false,
-        "hsb" : null,
-        "colorTemperature" : null
-      },
-      "0x0000000011748d34" : {
-        "power" : false,
-        "hsb" : null,
-        "colorTemperature" : null
-      },
-      "0x0000000007d4468c" : {
-        "power" : false,
-        "hsb" : null,
-        "colorTemperature" : null
-      },
-      "0x0000000013f4014e" : {
-        "power" : false,
-        "hsb" : {
-          "hue" : 19.0,
-          "saturation" : 55.0,
-          "brightness" : 66.0
-        },
-        "colorTemperature" : null
-      }
-    }
-  }, {
     "name" : "Zimmer aus",
     "id" : 9,
     "bulbStates" : {
@@ -155,111 +46,6 @@
           "hue" : 19.0,
           "saturation" : 0.0,
           "brightness" : 100.0
-        },
-        "colorTemperature" : null
-      }
-    }
-  }, {
-    "name" : "Nur Zimmer",
-    "id" : 6,
-    "bulbStates" : {
-      "0x0000000007f1dfd6" : {
-        "power" : false,
-        "hsb" : null,
-        "colorTemperature" : null
-      },
-      "0x0000000011744a50" : {
-        "power" : false,
-        "hsb" : null,
-        "colorTemperature" : null
-      },
-      "0x0000000007d1310e" : {
-        "power" : false,
-        "hsb" : null,
-        "colorTemperature" : null
-      },
-      "0x0000000007d45f9f" : {
-        "power" : false,
-        "hsb" : null,
-        "colorTemperature" : null
-      },
-      "0x00000000123f0032" : {
-        "power" : false,
-        "hsb" : null,
-        "colorTemperature" : null
-      },
-      "0x000000001174880c" : {
-        "power" : false,
-        "hsb" : null,
-        "colorTemperature" : null
-      },
-      "0x0000000012ebf17e" : {
-        "power" : false,
-        "hsb" : null,
-        "colorTemperature" : null
-      },
-      "0x0000000011748d34" : {
-        "power" : false,
-        "hsb" : null,
-        "colorTemperature" : null
-      },
-      "0x0000000007d4468c" : {
-        "power" : false,
-        "hsb" : null,
-        "colorTemperature" : null
-      },
-      "0x0000000013f4014e" : {
-        "power" : false,
-        "hsb" : null,
-        "colorTemperature" : null
-      }
-    }
-  }, {
-    "name" : "Zimmer Chill",
-    "id" : 5,
-    "bulbStates" : {
-      "0x000000001170297e" : {
-        "power" : true,
-        "hsb" : {
-          "hue" : 7.0,
-          "saturation" : 94.0,
-          "brightness" : 18.0
-        },
-        "colorTemperature" : null
-      },
-      "0x0000000011748240" : {
-        "power" : true,
-        "hsb" : {
-          "hue" : 7.0,
-          "saturation" : 94.0,
-          "brightness" : 18.0
-        },
-        "colorTemperature" : null
-      },
-      "0x000000000766b696" : {
-        "power" : true,
-        "hsb" : {
-          "hue" : 26.0,
-          "saturation" : 75.0,
-          "brightness" : 76.0
-        },
-        "colorTemperature" : null
-      },
-      "0x00000000123f01be" : {
-        "power" : true,
-        "hsb" : {
-          "hue" : 7.0,
-          "saturation" : 94.0,
-          "brightness" : 18.0
-        },
-        "colorTemperature" : null
-      },
-      "0x00000000123f0e90" : {
-        "power" : true,
-        "hsb" : {
-          "hue" : 26.0,
-          "saturation" : 73.0,
-          "brightness" : 76.0
         },
         "colorTemperature" : null
       }
@@ -544,146 +330,6 @@
       }
     }
   }, {
-    "name" : "Chill 2",
-    "id" : 7,
-    "bulbStates" : {
-      "0x00000000123f0e90" : {
-        "power" : true,
-        "hsb" : {
-          "hue" : 31.0,
-          "saturation" : 89.0,
-          "brightness" : 8.0
-        },
-        "colorTemperature" : null
-      },
-      "0x0000000012ebf17e" : {
-        "power" : true,
-        "hsb" : {
-          "hue" : 30.0,
-          "saturation" : 86.0,
-          "brightness" : 2.0
-        },
-        "colorTemperature" : null
-      },
-      "0x00000000123f01be" : {
-        "power" : true,
-        "hsb" : {
-          "hue" : 19.0,
-          "saturation" : 92.0,
-          "brightness" : 7.0
-        },
-        "colorTemperature" : null
-      },
-      "0x0000000013f4014e" : {
-        "power" : true,
-        "hsb" : {
-          "hue" : 30.0,
-          "saturation" : 86.0,
-          "brightness" : 2.0
-        },
-        "colorTemperature" : null
-      },
-      "0x000000000766b696" : {
-        "power" : true,
-        "hsb" : {
-          "hue" : 31.0,
-          "saturation" : 89.0,
-          "brightness" : 8.0
-        },
-        "colorTemperature" : null
-      },
-      "0x0000000011748240" : {
-        "power" : true,
-        "hsb" : {
-          "hue" : 19.0,
-          "saturation" : 92.0,
-          "brightness" : 7.0
-        },
-        "colorTemperature" : null
-      },
-      "0x000000001170297e" : {
-        "power" : true,
-        "hsb" : {
-          "hue" : 19.0,
-          "saturation" : 92.0,
-          "brightness" : 7.0
-        },
-        "colorTemperature" : null
-      },
-      "0x0000000007f1dfd6" : {
-        "power" : true,
-        "hsb" : {
-          "hue" : 25.0,
-          "saturation" : 91.0,
-          "brightness" : 6.0
-        },
-        "colorTemperature" : null
-      },
-      "0x0000000011744a50" : {
-        "power" : true,
-        "hsb" : {
-          "hue" : 9.0,
-          "saturation" : 93.0,
-          "brightness" : 7.0
-        },
-        "colorTemperature" : null
-      },
-      "0x0000000007d1310e" : {
-        "power" : false,
-        "hsb" : {
-          "hue" : 8.0,
-          "saturation" : 90.0,
-          "brightness" : 32.0
-        },
-        "colorTemperature" : null
-      },
-      "0x00000000123f0032" : {
-        "power" : false,
-        "hsb" : {
-          "hue" : 8.0,
-          "saturation" : 90.0,
-          "brightness" : 32.0
-        },
-        "colorTemperature" : null
-      },
-      "0x000000001174880c" : {
-        "power" : true,
-        "hsb" : {
-          "hue" : 248.0,
-          "saturation" : 90.0,
-          "brightness" : 2.0
-        },
-        "colorTemperature" : null
-      },
-      "0x0000000011748d34" : {
-        "power" : false,
-        "hsb" : {
-          "hue" : 8.0,
-          "saturation" : 90.0,
-          "brightness" : 32.0
-        },
-        "colorTemperature" : null
-      },
-      "0x0000000007d4468c" : {
-        "power" : true,
-        "hsb" : {
-          "hue" : 25.0,
-          "saturation" : 91.0,
-          "brightness" : 6.0
-        },
-        "colorTemperature" : null
-      },
-      "0x0000000007d45f9f" : {
-        "power" : true,
-        "hsb" : {
-          "hue" : 19.0,
-          "saturation" : 63.0,
-          "brightness" : 3.0
-        },
-        "colorTemperature" : null
-      }
-    }
-  }, {
     "name" : "Lüften",
     "id" : 8,
     "bulbStates" : {
@@ -821,86 +467,6 @@
           "brightness" : 2.0
         },
         "colorTemperature" : null
-      }
-    }
-  }, {
-    "name" : "Zimmer hell",
-    "id" : 2,
-    "bulbStates" : {
-      "0x000000001170297e" : {
-        "power" : true,
-        "hsb" : null,
-        "colorTemperature" : 4172
-      },
-      "0x0000000011748240" : {
-        "power" : true,
-        "hsb" : null,
-        "colorTemperature" : 4172
-      },
-      "0x00000000123f01be" : {
-        "power" : true,
-        "hsb" : null,
-        "colorTemperature" : 4172
-      },
-      "0x000000000766b696" : {
-        "power" : true,
-        "hsb" : null,
-        "colorTemperature" : 4172
-      },
-      "0x00000000123f0e90" : {
-        "power" : true,
-        "hsb" : null,
-        "colorTemperature" : 4172
-      }
-    }
-  }, {
-    "name" : "Zimmer hell",
-    "id" : 2,
-    "bulbStates" : {
-      "0x000000001170297e" : {
-        "power" : true,
-        "hsb" : {
-          "hue" : 7.0,
-          "saturation" : 5.0,
-          "brightness" : 97.0
-        },
-        "colorTemperature" : 4028
-      },
-      "0x0000000011748240" : {
-        "power" : true,
-        "hsb" : {
-          "hue" : 7.0,
-          "saturation" : 5.0,
-          "brightness" : 97.0
-        },
-        "colorTemperature" : 4028
-      },
-      "0x00000000123f01be" : {
-        "power" : true,
-        "hsb" : {
-          "hue" : 7.0,
-          "saturation" : 5.0,
-          "brightness" : 97.0
-        },
-        "colorTemperature" : 4028
-      },
-      "0x000000000766b696" : {
-        "power" : true,
-        "hsb" : {
-          "hue" : 7.0,
-          "saturation" : 5.0,
-          "brightness" : 97.0
-        },
-        "colorTemperature" : 4028
-      },
-      "0x00000000123f0e90" : {
-        "power" : true,
-        "hsb" : {
-          "hue" : 7.0,
-          "saturation" : 5.0,
-          "brightness" : 97.0
-        },
-        "colorTemperature" : 4028
       }
     }
   }, {
@@ -1121,6 +687,726 @@
         "power" : true,
         "hsb" : null,
         "colorTemperature" : 1916
+      }
+    }
+  }, {
+    "name" : "TV",
+    "id" : 12,
+    "bulbStates" : {
+      "0x0000000007d4468c" : {
+        "power" : false,
+        "hsb" : null,
+        "colorTemperature" : null
+      },
+      "0x0000000007f1dfd6" : {
+        "power" : false,
+        "hsb" : null,
+        "colorTemperature" : null
+      },
+      "0x0000000007d45f9f" : {
+        "power" : false,
+        "hsb" : null,
+        "colorTemperature" : null
+      },
+      "0x0000000011744a50" : {
+        "power" : false,
+        "hsb" : null,
+        "colorTemperature" : null
+      },
+      "0x0000000007d1310e" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 19.0,
+          "saturation" : 92.0,
+          "brightness" : 16.0
+        },
+        "colorTemperature" : null
+      },
+      "0x00000000123f0032" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 19.0,
+          "saturation" : 92.0,
+          "brightness" : 16.0
+        },
+        "colorTemperature" : null
+      },
+      "0x000000001174880c" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 19.0,
+          "saturation" : 92.0,
+          "brightness" : 16.0
+        },
+        "colorTemperature" : null
+      },
+      "0x0000000011748d34" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 19.0,
+          "saturation" : 92.0,
+          "brightness" : 16.0
+        },
+        "colorTemperature" : null
+      },
+      "0x0000000012ebf17e" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 12.0,
+          "saturation" : 94.0,
+          "brightness" : 36.0
+        },
+        "colorTemperature" : null
+      },
+      "0x0000000013f4014e" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 12.0,
+          "saturation" : 94.0,
+          "brightness" : 36.0
+        },
+        "colorTemperature" : null
+      },
+      "0x00000000123f01be" : {
+        "power" : false,
+        "hsb" : null,
+        "colorTemperature" : null
+      },
+      "0x000000001170297e" : {
+        "power" : false,
+        "hsb" : null,
+        "colorTemperature" : null
+      },
+      "0x0000000011748240" : {
+        "power" : false,
+        "hsb" : null,
+        "colorTemperature" : null
+      },
+      "0x000000000766b696" : {
+        "power" : false,
+        "hsb" : null,
+        "colorTemperature" : null
+      },
+      "0x00000000123f0e90" : {
+        "power" : false,
+        "hsb" : null,
+        "colorTemperature" : null
+      }
+    }
+  }, {
+    "name" : "Chill 2",
+    "id" : 7,
+    "bulbStates" : {
+      "0x00000000123f0e90" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 31.0,
+          "saturation" : 89.0,
+          "brightness" : 8.0
+        },
+        "colorTemperature" : null
+      },
+      "0x0000000012ebf17e" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 30.0,
+          "saturation" : 86.0,
+          "brightness" : 2.0
+        },
+        "colorTemperature" : null
+      },
+      "0x00000000123f01be" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 19.0,
+          "saturation" : 92.0,
+          "brightness" : 7.0
+        },
+        "colorTemperature" : null
+      },
+      "0x0000000013f4014e" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 30.0,
+          "saturation" : 86.0,
+          "brightness" : 2.0
+        },
+        "colorTemperature" : null
+      },
+      "0x000000000766b696" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 31.0,
+          "saturation" : 89.0,
+          "brightness" : 8.0
+        },
+        "colorTemperature" : null
+      },
+      "0x0000000011748240" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 19.0,
+          "saturation" : 92.0,
+          "brightness" : 7.0
+        },
+        "colorTemperature" : null
+      },
+      "0x000000001170297e" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 19.0,
+          "saturation" : 92.0,
+          "brightness" : 7.0
+        },
+        "colorTemperature" : null
+      },
+      "0x0000000007f1dfd6" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 25.0,
+          "saturation" : 91.0,
+          "brightness" : 6.0
+        },
+        "colorTemperature" : null
+      },
+      "0x0000000011744a50" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 9.0,
+          "saturation" : 93.0,
+          "brightness" : 7.0
+        },
+        "colorTemperature" : null
+      },
+      "0x0000000007d1310e" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 19.0,
+          "saturation" : 95.0,
+          "brightness" : 6.0
+        },
+        "colorTemperature" : null
+      },
+      "0x00000000123f0032" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 19.0,
+          "saturation" : 95.0,
+          "brightness" : 6.0
+        },
+        "colorTemperature" : null
+      },
+      "0x000000001174880c" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 19.0,
+          "saturation" : 95.0,
+          "brightness" : 6.0
+        },
+        "colorTemperature" : null
+      },
+      "0x0000000011748d34" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 19.0,
+          "saturation" : 95.0,
+          "brightness" : 6.0
+        },
+        "colorTemperature" : null
+      },
+      "0x0000000007d4468c" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 25.0,
+          "saturation" : 91.0,
+          "brightness" : 6.0
+        },
+        "colorTemperature" : null
+      },
+      "0x0000000007d45f9f" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 19.0,
+          "saturation" : 63.0,
+          "brightness" : 3.0
+        },
+        "colorTemperature" : null
+      }
+    }
+  }, {
+    "name" : "Nur Zimmer",
+    "id" : 14,
+    "bulbStates" : {
+      "0x0000000007d4468c" : {
+        "power" : false,
+        "hsb" : null,
+        "colorTemperature" : null
+      },
+      "0x0000000007f1dfd6" : {
+        "power" : false,
+        "hsb" : null,
+        "colorTemperature" : null
+      },
+      "0x0000000007d45f9f" : {
+        "power" : false,
+        "hsb" : null,
+        "colorTemperature" : null
+      },
+      "0x0000000011744a50" : {
+        "power" : false,
+        "hsb" : null,
+        "colorTemperature" : null
+      },
+      "0x0000000007d1310e" : {
+        "power" : false,
+        "hsb" : null,
+        "colorTemperature" : null
+      },
+      "0x00000000123f0032" : {
+        "power" : false,
+        "hsb" : null,
+        "colorTemperature" : null
+      },
+      "0x000000001174880c" : {
+        "power" : false,
+        "hsb" : null,
+        "colorTemperature" : null
+      },
+      "0x0000000011748d34" : {
+        "power" : false,
+        "hsb" : null,
+        "colorTemperature" : null
+      },
+      "0x0000000012ebf17e" : {
+        "power" : false,
+        "hsb" : null,
+        "colorTemperature" : null
+      },
+      "0x0000000013f4014e" : {
+        "power" : false,
+        "hsb" : null,
+        "colorTemperature" : null
+      },
+      "0x00000000123f01be" : {
+        "power" : null,
+        "hsb" : null,
+        "colorTemperature" : null
+      },
+      "0x000000001170297e" : {
+        "power" : null,
+        "hsb" : null,
+        "colorTemperature" : null
+      },
+      "0x0000000011748240" : {
+        "power" : null,
+        "hsb" : null,
+        "colorTemperature" : null
+      },
+      "0x000000000766b696" : {
+        "power" : null,
+        "hsb" : null,
+        "colorTemperature" : null
+      },
+      "0x00000000123f0e90" : {
+        "power" : null,
+        "hsb" : null,
+        "colorTemperature" : null
+      }
+    }
+  }, {
+    "name" : "Szene 1",
+    "id" : 13,
+    "bulbStates" : {
+      "0x0000000007d4468c" : {
+        "power" : false,
+        "hsb" : null,
+        "colorTemperature" : null
+      },
+      "0x0000000007f1dfd6" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 0.0,
+          "saturation" : 92.0,
+          "brightness" : 30.0
+        },
+        "colorTemperature" : null
+      },
+      "0x0000000007d45f9f" : {
+        "power" : false,
+        "hsb" : null,
+        "colorTemperature" : null
+      },
+      "0x0000000011744a50" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 292.0,
+          "saturation" : 92.0,
+          "brightness" : 30.0
+        },
+        "colorTemperature" : null
+      },
+      "0x0000000007d1310e" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 295.0,
+          "saturation" : 90.0,
+          "brightness" : 54.0
+        },
+        "colorTemperature" : null
+      },
+      "0x00000000123f0032" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 295.0,
+          "saturation" : 90.0,
+          "brightness" : 54.0
+        },
+        "colorTemperature" : null
+      },
+      "0x000000001174880c" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 295.0,
+          "saturation" : 90.0,
+          "brightness" : 54.0
+        },
+        "colorTemperature" : null
+      },
+      "0x0000000011748d34" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 295.0,
+          "saturation" : 90.0,
+          "brightness" : 54.0
+        },
+        "colorTemperature" : null
+      },
+      "0x0000000012ebf17e" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 242.0,
+          "saturation" : 98.0,
+          "brightness" : 96.0
+        },
+        "colorTemperature" : null
+      },
+      "0x0000000013f4014e" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 125.0,
+          "saturation" : 98.0,
+          "brightness" : 96.0
+        },
+        "colorTemperature" : null
+      },
+      "0x00000000123f01be" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 42.0,
+          "saturation" : 98.0,
+          "brightness" : 97.0
+        },
+        "colorTemperature" : null
+      },
+      "0x000000001170297e" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 42.0,
+          "saturation" : 98.0,
+          "brightness" : 97.0
+        },
+        "colorTemperature" : null
+      },
+      "0x0000000011748240" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 42.0,
+          "saturation" : 98.0,
+          "brightness" : 97.0
+        },
+        "colorTemperature" : null
+      },
+      "0x000000000766b696" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 236.0,
+          "saturation" : 98.0,
+          "brightness" : 97.0
+        },
+        "colorTemperature" : null
+      },
+      "0x00000000123f0e90" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 236.0,
+          "saturation" : 98.0,
+          "brightness" : 97.0
+        },
+        "colorTemperature" : null
+      }
+    }
+  }, {
+    "name" : "Szene 2",
+    "id" : 15,
+    "bulbStates" : {
+      "0x0000000007d4468c" : {
+        "power" : null,
+        "hsb" : null,
+        "colorTemperature" : null
+      },
+      "0x0000000007f1dfd6" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 248.0,
+          "saturation" : 91.0,
+          "brightness" : 96.0
+        },
+        "colorTemperature" : null
+      },
+      "0x0000000007d45f9f" : {
+        "power" : null,
+        "hsb" : null,
+        "colorTemperature" : null
+      },
+      "0x0000000011744a50" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 51.0,
+          "saturation" : 97.0,
+          "brightness" : 98.0
+        },
+        "colorTemperature" : null
+      },
+      "0x0000000007d1310e" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 344.0,
+          "saturation" : 97.0,
+          "brightness" : 98.0
+        },
+        "colorTemperature" : null
+      },
+      "0x00000000123f0032" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 228.0,
+          "saturation" : 97.0,
+          "brightness" : 98.0
+        },
+        "colorTemperature" : null
+      },
+      "0x000000001174880c" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 123.0,
+          "saturation" : 97.0,
+          "brightness" : 98.0
+        },
+        "colorTemperature" : null
+      },
+      "0x0000000011748d34" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 61.0,
+          "saturation" : 97.0,
+          "brightness" : 98.0
+        },
+        "colorTemperature" : null
+      },
+      "0x0000000012ebf17e" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 295.0,
+          "saturation" : 97.0,
+          "brightness" : 98.0
+        },
+        "colorTemperature" : null
+      },
+      "0x0000000013f4014e" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 15.0,
+          "saturation" : 97.0,
+          "brightness" : 98.0
+        },
+        "colorTemperature" : null
+      },
+      "0x00000000123f01be" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 344.0,
+          "saturation" : 97.0,
+          "brightness" : 98.0
+        },
+        "colorTemperature" : null
+      },
+      "0x000000001170297e" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 240.0,
+          "saturation" : 97.0,
+          "brightness" : 98.0
+        },
+        "colorTemperature" : null
+      },
+      "0x0000000011748240" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 137.0,
+          "saturation" : 97.0,
+          "brightness" : 98.0
+        },
+        "colorTemperature" : null
+      },
+      "0x000000000766b696" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 69.0,
+          "saturation" : 97.0,
+          "brightness" : 98.0
+        },
+        "colorTemperature" : null
+      },
+      "0x00000000123f0e90" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 302.0,
+          "saturation" : 97.0,
+          "brightness" : 98.0
+        },
+        "colorTemperature" : null
+      }
+    }
+  }, {
+    "name" : "Szene 3",
+    "id" : 16,
+    "bulbStates" : {
+      "0x0000000007d4468c" : {
+        "power" : null,
+        "hsb" : null,
+        "colorTemperature" : null
+      },
+      "0x0000000007f1dfd6" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 349.0,
+          "saturation" : 97.0,
+          "brightness" : 98.0
+        },
+        "colorTemperature" : null
+      },
+      "0x0000000007d45f9f" : {
+        "power" : null,
+        "hsb" : null,
+        "colorTemperature" : null
+      },
+      "0x0000000011744a50" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 44.0,
+          "saturation" : 97.0,
+          "brightness" : 98.0
+        },
+        "colorTemperature" : null
+      },
+      "0x0000000007d1310e" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 233.0,
+          "saturation" : 97.0,
+          "brightness" : 98.0
+        },
+        "colorTemperature" : null
+      },
+      "0x00000000123f0032" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 233.0,
+          "saturation" : 97.0,
+          "brightness" : 98.0
+        },
+        "colorTemperature" : null
+      },
+      "0x000000001174880c" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 233.0,
+          "saturation" : 97.0,
+          "brightness" : 98.0
+        },
+        "colorTemperature" : null
+      },
+      "0x0000000011748d34" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 233.0,
+          "saturation" : 97.0,
+          "brightness" : 98.0
+        },
+        "colorTemperature" : null
+      },
+      "0x0000000012ebf17e" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 233.0,
+          "saturation" : 97.0,
+          "brightness" : 98.0
+        },
+        "colorTemperature" : null
+      },
+      "0x0000000013f4014e" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 233.0,
+          "saturation" : 97.0,
+          "brightness" : 98.0
+        },
+        "colorTemperature" : null
+      },
+      "0x00000000123f01be" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 118.0,
+          "saturation" : 97.0,
+          "brightness" : 98.0
+        },
+        "colorTemperature" : null
+      },
+      "0x000000001170297e" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 118.0,
+          "saturation" : 97.0,
+          "brightness" : 98.0
+        },
+        "colorTemperature" : null
+      },
+      "0x0000000011748240" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 118.0,
+          "saturation" : 97.0,
+          "brightness" : 98.0
+        },
+        "colorTemperature" : null
+      },
+      "0x000000000766b696" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 118.0,
+          "saturation" : 97.0,
+          "brightness" : 98.0
+        },
+        "colorTemperature" : null
+      },
+      "0x00000000123f0e90" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 118.0,
+          "saturation" : 97.0,
+          "brightness" : 98.0
+        },
+        "colorTemperature" : null
       }
     }
   } ]
