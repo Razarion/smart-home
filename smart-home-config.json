@@ -1409,5 +1409,105 @@
         "colorTemperature" : null
       }
     }
+  }, {
+    "name" : "Zimmer hell",
+    "id" : 17,
+    "bulbStates" : {
+      "0x00000000123f01be" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 0.0,
+          "saturation" : 0.0,
+          "brightness" : 100.0
+        },
+        "colorTemperature" : 3980
+      },
+      "0x000000001170297e" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 0.0,
+          "saturation" : 0.0,
+          "brightness" : 100.0
+        },
+        "colorTemperature" : 3980
+      },
+      "0x0000000011748240" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 0.0,
+          "saturation" : 0.0,
+          "brightness" : 100.0
+        },
+        "colorTemperature" : 3980
+      },
+      "0x000000000766b696" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 0.0,
+          "saturation" : 0.0,
+          "brightness" : 100.0
+        },
+        "colorTemperature" : 3980
+      },
+      "0x00000000123f0e90" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 0.0,
+          "saturation" : 0.0,
+          "brightness" : 100.0
+        },
+        "colorTemperature" : 3980
+      }
+    }
+  }, {
+    "name" : "Zimmer chill",
+    "id" : 18,
+    "bulbStates" : {
+      "0x00000000123f01be" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 26.0,
+          "saturation" : 96.0,
+          "brightness" : 76.0
+        },
+        "colorTemperature" : null
+      },
+      "0x000000001170297e" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 26.0,
+          "saturation" : 96.0,
+          "brightness" : 76.0
+        },
+        "colorTemperature" : null
+      },
+      "0x0000000011748240" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 26.0,
+          "saturation" : 96.0,
+          "brightness" : 76.0
+        },
+        "colorTemperature" : null
+      },
+      "0x000000000766b696" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 21.0,
+          "saturation" : 89.0,
+          "brightness" : 81.0
+        },
+        "colorTemperature" : null
+      },
+      "0x00000000123f0e90" : {
+        "power" : true,
+        "hsb" : {
+          "hue" : 21.0,
+          "saturation" : 89.0,
+          "brightness" : 81.0
+        },
+        "colorTemperature" : null
+      }
+    }
   } ]
 }
